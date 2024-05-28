@@ -8,3 +8,62 @@
 #wrapper{
     background-color: gray;
 }
+
+[class*=col]{
+    /* background-color: blueviolet; */
+    /* border: solid 2px black; */
+}
+
+/* Header */
+header .container-xxl{
+    background-color: #F8F9FA;
+}
+
+#small-logo{
+    max-width: 50px;
+}
+
+#big-logo{
+    max-width: 100%;
+    display: none;
+}
+
+header input{
+    width: 100%;
+    padding: 10px;
+}
+
+.hidden{
+    display: none;
+}
+
+
+/* MEDIA */
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {  }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    #small-logo{
+        display: none;
+    }
+
+    #big-logo{
+        display: inline-block;
+    }
+
+    .hidden{
+        display: inline-block;
+    }
+  }
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {  }
+
+
