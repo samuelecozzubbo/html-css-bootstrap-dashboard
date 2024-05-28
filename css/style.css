@@ -9,14 +9,12 @@
     background-color: gray;
 }
 
-[class*=col]{
-    /* background-color: blueviolet; */
-    /* border: solid 2px black; */
-}
+
 
 /* Header */
 header .container-xxl{
     background-color: #F8F9FA;
+    height: 60px;
 }
 
 #small-logo{
@@ -35,6 +33,28 @@ header input{
 
 .hidden{
     display: none;
+}
+
+/* Nav left */
+#nav-left{
+    min-width: 60px;
+    height: 100vh;
+    padding-top: 60px;
+    background-color: #11273E;
+    background-image: url('../img/sidebar-bg.png');
+    background-size: contain;
+}
+
+.nav-link span{
+    display: none;
+}
+
+#sidebar i {
+    font-size: 25px;
+}
+
+#main-section{
+    background-color: brown;
 }
 
 
@@ -57,6 +77,18 @@ header input{
 
     .hidden{
         display: inline-block;
+    }
+
+    .nav-link span{
+        display: inline-block;
+    }
+
+    #nav-left{
+        min-width: 120px;
+    }
+
+    #sidebar i {
+        font-size: 1em;
     }
   }
 
