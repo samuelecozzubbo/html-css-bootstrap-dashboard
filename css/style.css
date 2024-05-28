@@ -37,9 +37,8 @@ header input{
 
 /* Nav left */
 #nav-left{
-    min-width: 60px;
+    padding-top: 80px;
     height: 100vh;
-    padding-top: 60px;
     background-color: #11273E;
     background-image: url('../img/sidebar-bg.png');
     background-size: contain;
@@ -53,8 +52,35 @@ header input{
     font-size: 25px;
 }
 
+/* Main section */
+
 #main-section{
     background-color: brown;
+}
+
+.upper-menu{
+    margin-top: 60px;
+    background-color: #1B72E8;
+}
+
+h2::after{
+    content: 'Piano blaze';
+    font-size: 0.4em;
+    background-color: #1358B9;
+    padding: 2px 5px;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+
+.path-element{
+    font-size: 0.6em;
+    background-color: #1358B9;
+    padding: 2px 3px;
+    border-radius: 10px;
+}
+
+.counter{
+    font-size: 1.7em;
 }
 
 
@@ -81,10 +107,6 @@ header input{
 
     .nav-link span{
         display: inline-block;
-    }
-
-    #nav-left{
-        min-width: 120px;
     }
 
     #sidebar i {
