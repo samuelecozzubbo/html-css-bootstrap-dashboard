@@ -77,62 +77,332 @@
                         </nav>
                     </div>
                     <!-- MAIN SECTION -->
-                    <div id="main-section" class="col-11">
-                        <!-- Upper menu -->
-                        <div class="row text-white">
-                            <div class="col-12">
-                                <div class="upper-menu py-2 px-5">
-                                    <ul class="nav justify-content-between">
-                                        <li class="nav-item">
-                                            <h2>Boolean</h2>
-                                            <span class="path-element">3 app</span>
-                                            <span>&#187;</span>
-                                            <span class="path-element">Boolean mobile app</span>
-                                            <span class="path-element">Boolean web app</span>
-                                            <span class="path-element">Boolean blog app</span>
-                                        </li>
-                                        <li class="nav-item">
-                                            <div>Studenti online negli ultimi 30 minuti</div>
-                                            <div class="counter">125</div>
-                                        </li>
-                                        <li class="nav-item">
-                                            <!-- OFFCANVAS -->
-                                            <span>Nuovo studente
-                                                <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-                                                    <i class="fa-solid fa-plus"></i>
-                                                  </a>
-                                                  
-                                                  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-                                                    <div class="offcanvas-header">
-                                                      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-                                                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                                                    </div>
-                                                    <div class="offcanvas-body">
-                                                      <div>
-                                                        Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+                    <div id="main-section" class="col-11 overflow-y-scroll">
+                        
+                        <div class="container-fluid">
+                            <!-- Upper menu -->
+                            <div class="row text-white">
+                                <div class="col-12 g-0">
+                                    <div class="upper-menu py-2 px-1">
+                                        <ul class="nav justify-content-md-between flex-column-reverse flex-md-row">
+                                            <li class="nav-item">
+                                                <h2>Boolean</h2>
+                                                <span class="path-element">3 app</span>
+                                                <span>&#187;</span>
+                                                <span class="path-element hidden">Boolean mobile app</span>
+                                                <span class="path-element hidden">Boolean web app</span>
+                                                <span class="path-element hidden">Boolean blog app</span>
+                                            </li>
+                                            <li class="nav-item">
+                                                <div>Studenti online negli ultimi 30 minuti</div>
+                                                <div class="counter">125</div>
+                                            </li>
+                                            <li class="nav-item">
+                                                <!-- OFFCANVAS -->
+                                                <span>Nuovo studente
+                                                    <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                                                        <i class="fa-solid fa-plus"></i>
+                                                      </a>
+                                                      
+                                                      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                                                        <div class="offcanvas-header">
+                                                          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                                                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="offcanvas-body">
+                                                          <div>
+                                                            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+                                                          </div>
+                                                          <div class="dropdown mt-3">
+                                                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                                              Dropdown button
+                                                            </button>
+                                                            <ul class="dropdown-menu">
+                                                              <li><a class="dropdown-item" href="#">Action</a></li>
+                                                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                            </ul>
+                                                          </div>
+                                                        </div>
                                                       </div>
-                                                      <div class="dropdown mt-3">
-                                                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                                                          Dropdown button
-                                                        </button>
-                                                        <ul class="dropdown-menu">
-                                                          <li><a class="dropdown-item" href="#">Action</a></li>
-                                                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                                                          <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                                        </ul>
-                                                      </div>
-                                                    </div>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Main -->
+                            <div class="row g-4 p-4">
+                                <div class="col-12 col-lg-8 gx-0">
+                                    <!-- table -->
+                                    <table class="table">
+                                        <thead>
+                                          <tr class="table-secondary">
+                                            <th colspan="5" scope="col">Prossime classi</th>
+                                            <th scope="col"></th>
+                                            <th scope="col"></th>
+                                            <th scope="col"></th>
+                                            <th class="hidden-table" scope="col"></th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr class="small-text">
+                                            <td colspan="5">Nome</td>
+                                            <td class="hidden-table">Data inizio</td>
+                                            <td>ROI</td>
+                                            <td>Stato</td>
+                                            <td>Azioni</td>
+                                          </tr>
+                                          <!-- Table row -->
+                                          <tr class="small-text">
+                                            <td colspan="5">
+                                              <div class="class-name">
+                                                <img src="img/class-avatar.jpg" alt="">
+                                                <span>Classe 75</span>
+                                              </div>
+                                            </td>
+                                            <td class="hidden-table">15 Feb 2021</td>
+                                            <td>20%</td>
+                                            <td><span class="badge text-bg-success">Done</span></td>
+                                            <td>
+                                              <div class="table-icons">
+                                                <a href="#" class="fa-solid fa-pencil"></a>
+                                                <a href="#" class="fa-solid fa-trash"></a>
+                                              </div>
+                                            </td>
+                                          </tr>
+                                          <!-- Table row -->
+                                          <tr class="small-text">
+                                            <td colspan="5">
+                                              <div class="class-name">
+                                                <img src="img/class-avatar.jpg" alt="">
+                                                <span>Classe 76</span>
+                                              </div>
+                                            </td>
+                                            <td class="hidden-table">16 Feb 2021</td>
+                                            <td>20%</td>
+                                            <td><span class="badge text-bg-success">Done</span></td>
+                                            <td>
+                                              <div class="table-icons">
+                                                <a href="#" class="fa-solid fa-pencil"></a>
+                                                <a href="#" class="fa-solid fa-trash"></a>
+                                              </div>
+                                            </td>
+                                          </tr>
+                                          <!-- Table row -->
+                                          <tr class="small-text">
+                                            <td colspan="5">
+                                              <div class="class-name">
+                                                <img src="img/class-avatar.jpg" alt="">
+                                                <span>Classe 77</span>
+                                              </div>
+                                            </td>
+                                            <td class="hidden-table">17 Feb 2021</td>
+                                            <td>20%</td>
+                                            <td><span class="text-white badge text-bg-warning">Process</span></td>
+                                            <td>
+                                              <div class="table-icons">
+                                                <a href="#" class="fa-solid fa-pencil"></a>
+                                                <a href="#" class="fa-solid fa-trash"></a>
+                                              </div>
+                                            </td>
+                                          </tr>
+                                          <!-- Table row -->
+                                          <tr class="small-text">
+                                            <td colspan="5">
+                                              <div class="class-name">
+                                                <img src="img/class-avatar.jpg" alt="">
+                                                <span>Classe 78</span>
+                                              </div>
+                                            </td>
+                                            <td class="hidden-table">18 Feb 2021</td>
+                                            <td>20%</td>
+                                            <td><span class="badge text-bg-success">Done</span></td>
+                                            <td>
+                                              <div class="table-icons">
+                                                <a href="#" class="fa-solid fa-pencil"></a>
+                                                <a href="#" class="fa-solid fa-trash"></a>
+                                              </div>
+                                            </td>
+                                          </tr>
+                                          <!-- Table row -->
+                                          <tr class="small-text">
+                                            <td colspan="5">
+                                              <div class="class-name">
+                                                <img src="img/class-avatar.jpg" alt="">
+                                                <span>Classe 79</span>
+                                              </div>
+                                            </td>
+                                            <td class="hidden-table">19 Feb 2021</td>
+                                            <td>20%</td>
+                                            <td><span class="badge text-bg-danger">Failed</span></td>
+                                            <td>
+                                              <div class="table-icons">
+                                                <a href="#" class="fa-solid fa-pencil"></a>
+                                                <a href="#" class="fa-solid fa-trash"></a>
+                                              </div>
+                                            </td>
+                                          </tr>
+                                          <!-- Table row -->
+                                          <tr class="small-text">
+                                            <td colspan="5">
+                                              <div class="class-name">
+                                                <img src="img/class-avatar.jpg" alt="">
+                                                <span>Classe 80</span>
+                                              </div>
+                                            </td>
+                                            <td class="hidden-table">20 Feb 2021</td>
+                                            <td>20%</td>
+                                            <td><span class="badge text-bg-success">Done</span></td>
+                                            <td>
+                                              <div class="table-icons">
+                                                <a href="#" class="fa-solid fa-pencil"></a>
+                                                <a href="#" class="fa-solid fa-trash"></a>
+                                              </div>
+                                            </td>
+                                          </tr>
+                                          <!-- Table row -->
+                                          <tr class="small-text">
+                                            <td colspan="5">
+                                              <div class="class-name">
+                                                <img src="img/class-avatar.jpg" alt="">
+                                                <span>Classe 81</span>
+                                              </div>
+                                            </td>
+                                            <td class="hidden-table">21 Feb 2021</td>
+                                            <td>20%</td>
+                                            <td><span class="badge text-bg-danger">Failed</span></td>
+                                            <td>
+                                              <div class="table-icons">
+                                                <a href="#" class="fa-solid fa-pencil"></a>
+                                                <a href="#" class="fa-solid fa-trash"></a>
+                                              </div>
+                                            </td>
+                                          </tr>
+                                          <!-- Table row -->
+                                          <tr class="small-text">
+                                            <td colspan="5">
+                                              <div class="class-name">
+                                                <img src="img/class-avatar.jpg" alt="">
+                                                <span>Classe 82</span>
+                                              </div>
+                                            </td>
+                                            <td class="hidden-table">22 Feb 2021</td>
+                                            <td>20%</td>
+                                            <td><span class="badge text-bg-success">Done</span></td>
+                                            <td>
+                                              <div class="table-icons">
+                                                <a href="#" class="fa-solid fa-pencil"></a>
+                                                <a href="#" class="fa-solid fa-trash"></a>
+                                              </div>
+                                            </td>
+                                          </tr>
+
+                                        </tbody>
+                                    </table>
+                                    <!-- Accordion -->
+                                    <table class="table">
+                                      <thead>
+                                        <tr class="table-secondary">
+                                          <th class="colspan-5" scope="col">F.A.Q.</th>                                      
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <td>
+                                            <div class="accordion" id="accordionExample">
+                                              <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                    Come aggiungere un nuovo studente?                                
+                                                  </button>
+                                                </h2>
+                                                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                                  <div class="accordion-body">
+                                                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                                                   </div>
-                                            </span>
-                                        </li>
-                                    </ul>
+                                                </div>
+                                              </div>
+                                              <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                    Come posso accedere alle informazioni del mio account?
+                                                  </button>
+                                                </h2>
+                                                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                                  <div class="accordion-body">
+                                                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                    Posso usare questa dashboard da mobile?
+                                                  </button>
+                                                </h2>
+                                                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                                  <div class="accordion-body">
+                                                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                  </div>
+                                                </div>
+                                              </div>
+                                          </div>
+                                          </td>                                          
+                                        </tr>          
+                                      </tbody>
+                                    </table>                                    
+                                </div>
+
+                                <div class="col-12 col-lg-4">
+                                    <!-- Todolist -->
+                                    <table class="table">
+                                      <thead>
+                                        <tr class="table-secondary">
+                                          <th class="colspan-5" scope="col">Todo</th>                                      
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <td>
+                                            <ul class="list-group">
+                                              <li class="list-group-item">
+                                                <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                                                <label class="form-check-label" for="firstCheckbox">Kickoff nuove classi</label>
+                                              </li>
+                                              <li class="list-group-item">
+                                                <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                                                <label class="form-check-label" for="secondCheckbox">Lezione su Bootstrap 5 in classe #75</label>
+                                              </li>
+                                              <li class="list-group-item">
+                                                <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                                                <label class="form-check-label" for="thirdCheckbox">Controllare usarname github studenti</label>
+                                              </li>
+                                            </ul>
+                                          </td>                                          
+                                        </tr>          
+                                      </tbody>
+                                    </table>
+                                    <!-- Graph -->
+                                    <div class="graph">
+                                      <div class="graph-element">
+                                        <img src="img/stats.jpeg" alt="">
+                                        <div class="active-user">
+                                          <h6>Utenti attivi</h6>
+                                          <div class="small-text">Lista degli utenti attivi in piattaforma nell ultimo mese</div>
+                                        </div>
+                                        <ul class="list-group small-text">
+                                          <li class="list-group-item">Gennaio: 1200</li>
+                                          <li class="list-group-item">Febbraio: 800</li>
+                                          <li class="list-group-item">Marzo: 1500</li>
+                                          <li class="list-group-item"><a href="#">Visualizza report approfondito</a></li>                                          
+                                        </ul>
+                                      </div>                                      
+                                    </div>                                    
                                 </div>
                             </div>
                         </div>
-                        <!-- Main -->
-                        <div class="row bg-dark">
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>

@@ -56,6 +56,7 @@ header input{
 
 #main-section{
     background-color: brown;
+    max-height: 100vh;
 }
 
 .upper-menu{
@@ -63,7 +64,7 @@ header input{
     background-color: #1B72E8;
 }
 
-h2::after{
+.uppermenu h2::after{
     content: 'Piano blaze';
     font-size: 0.4em;
     background-color: #1358B9;
@@ -83,10 +84,51 @@ h2::after{
     font-size: 1.7em;
 }
 
+.small-text{
+    font-size: 0.8em;
+}
+
+.class-name img{
+    max-width: 20px;
+}
+
+.table-icons a{
+    color: gray;
+    border: 1px solid gray;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.hidden-table{
+    display: none;
+}
+
+.graph{
+    background-color: white;
+    border: solid 1px gray;
+    border-radius: 2px;
+
+}
+
+.graph-element{
+    background-color: white;
+    margin: 10px;
+    border-radius: 2px;
+    border: solid 1px gray;
+}
+
+.graph img{
+    max-width: 100%;
+}
 
 /* MEDIA */
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {  }
+@media (min-width: 576px) { 
+    .hidden-table{
+        display: block;
+    }
+ }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {  }
