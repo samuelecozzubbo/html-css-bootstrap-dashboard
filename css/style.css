@@ -9,7 +9,10 @@
     background-color: gray;
 }
 
-
+table{
+    border: solid 2px black;
+    border-radius: 5px;
+}
 
 /* Header */
 header .container-xxl{
@@ -60,7 +63,7 @@ header input{
 /* Main section */
 
 #main-section{
-    background-color: brown;
+    background-color: #F7F8F9;
     max-height: 100vh;
 }
 
@@ -166,5 +169,29 @@ header input{
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {  }
+
+
+/* HOVER */
+#sidebar a:hover{
+    background-color: lightgray;
+    
+}
+
+table td:hover {
+    background-color: lightgray;
+    
+}
+
+.fa-plus{
+    border: solid 1px white;
+    color: white;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.fa-plus:hover{
+   background-color: white;
+   color: black;
+}
 
 
