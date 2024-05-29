@@ -34,11 +34,19 @@
                     <div class="col-1">
                         <div class="row">
                             <div class="col-12">
-                                <div class="nav-right d-flex justify-content-end justify-content-lg-between">
+                                <div class="nav-right d-flex justify-content-end justify-content-lg-between align-items-center">
                                     <i class="hidden fa-solid fa-list"></i>
                                     <i class="hidden fa-solid fa-circle-question"></i>
-                                    <i class="hidden fa-solid fa-ellipsis-vertical"></i>
-                                    <a href="#" class="fa-solid fa-bell"></a>
+                                    <i class="hidden fa-solid fa-ellipsis-vertical"></i>                                
+                                    <div class="dropdown">
+                                      <a class="fa-solid fa-bell dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                      </a>
+                                      <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                      </ul>
+                                    </div>
                                 </div>
                                 
                             </div>
@@ -106,24 +114,65 @@
                                                       
                                                       <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
                                                         <div class="offcanvas-header">
-                                                          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                                                          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Inserisci un nuovo studente</h5>
                                                           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                                         </div>
                                                         <div class="offcanvas-body">
-                                                          <div>
-                                                            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
-                                                          </div>
-                                                          <div class="dropdown mt-3">
-                                                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                                                              Dropdown button
-                                                            </button>
-                                                            <ul class="dropdown-menu">
-                                                              <li><a class="dropdown-item" href="#">Action</a></li>
-                                                              <li><a class="dropdown-item" href="#">Another action</a></li>
-                                                              <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                                            </ul>
-                                                          </div>
-                                                        </div>
+                                                          <form class="container-fluid">
+                                                              <div class="row mb-3">
+                                                                  <div class="col">
+                                                                      <label for="studentName" class="form-label">Nome</label>
+                                                                      <input type="text" class="form-control" id="studentName" placeholder="Nome">
+                                                                  </div>
+                                                                  <div class="col">
+                                                                      <label for="studentSurname" class="form-label">Cognome</label>
+                                                                      <input type="text" class="form-control" id="studentSurname" placeholder="Cognome">
+                                                                  </div>
+                                                              </div>
+                                                              <div class="row mb-3">
+                                                                  <div class="col">
+                                                                      <label for="studentEmail" class="form-label">Email</label>
+                                                                      <input type="email" class="form-control" id="studentEmail" placeholder="Email">
+                                                                  </div>
+                                                                  <div class="col">
+                                                                      <label for="studentPassword" class="form-label">Password</label>
+                                                                      <input type="password" class="form-control" id="studentPassword" placeholder="Password">
+                                                                  </div>
+                                                              </div>
+                                                              <div class="row mb-3">
+                                                                  <div class="col">
+                                                                      <label for="studentAddress" class="form-label">Indirizzo</label>
+                                                                      <input type="text" class="form-control" id="studentAddress" placeholder="Indirizzo">
+                                                                  </div>
+                                                              </div>
+                                                              <div class="row mb-3">
+                                                                  <div class="col">
+                                                                      <label for="studentCity" class="form-label">Città</label>
+                                                                      <input type="text" class="form-control" id="studentCity" placeholder="Città">
+                                                                  </div>
+                                                                  <div class="col">
+                                                                      <label for="studentState" class="form-label">Stato</label>
+                                                                      <select class="form-select" id="studentState">
+                                                                          <option selected>Scegli...</option>                                                                
+                                                                      </select>
+                                                                  </div>
+                                                                  <div class="col">
+                                                                      <label for="studentZip" class="form-label">CAP</label>
+                                                                      <input type="text" class="form-control" id="studentZip" placeholder="CAP">
+                                                                  </div>
+                                                              </div>
+                                                              <div class="mb-3">
+                                                                  <label for="studentPhoto" class="form-label">Foto</label>
+                                                                  <input type="file" class="form-control" id="studentPhoto">
+                                                              </div>
+                                                              <div class="mb-3 form-check">
+                                                                  <input type="checkbox" class="form-check-input" id="studentTerms">
+                                                                  <label class="form-check-label" for="studentTerms">Seleziona per proseguire</label>
+                                                              </div>
+                                                              <button type="submit" class="btn btn-primary">Salva</button>
+                                                              <button type="reset" class="btn btn-warning">Svuota</button>
+                                                          </form>
+                                                      </div>
                                                       </div>
                                                 </span>
                                             </li>
@@ -136,169 +185,168 @@
                                 <div class="col-12 col-lg-8 gx-0">
                                     <!-- table -->
                                     <table class="table">
-                                        <thead>
+                                      <thead>
                                           <tr class="table-secondary">
-                                            <th colspan="5" scope="col">Prossime classi</th>
-                                            <th scope="col"></th>
-                                            <th scope="col"></th>
-                                            <th scope="col"></th>
-                                            <th class="hidden-table" scope="col"></th>
+                                              <th colspan="5" scope="col">Prossime classi</th>
+                                              <th scope="col"></th>
+                                              <th scope="col"></th>
+                                              <th class="d-none d-sm-table-cell" scope="col"></th>
+                                              <th class="d-none d-sm-table-cell" scope="col"></th>
                                           </tr>
-                                        </thead>
-                                        <tbody>
+                                      </thead>
+                                      <tbody>
                                           <tr class="small-text">
-                                            <td colspan="5">Nome</td>
-                                            <td class="hidden-table">Data inizio</td>
-                                            <td>ROI</td>
-                                            <td>Stato</td>
-                                            <td>Azioni</td>
+                                              <td colspan="5">Nome</td>
+                                              <td class="d-none d-sm-table-cell">Data inizio</td>
+                                              <td class="d-none d-sm-table-cell">ROI</td>
+                                              <td>Stato</td>
+                                              <td>Azioni</td>
                                           </tr>
                                           <!-- Table row -->
                                           <tr class="small-text">
-                                            <td colspan="5">
-                                              <div class="class-name">
-                                                <img src="img/class-avatar.jpg" alt="">
-                                                <span>Classe 75</span>
-                                              </div>
-                                            </td>
-                                            <td class="hidden-table">15 Feb 2021</td>
-                                            <td>20%</td>
-                                            <td><span class="badge text-bg-success">Done</span></td>
-                                            <td>
-                                              <div class="table-icons">
-                                                <a href="#" class="fa-solid fa-pencil"></a>
-                                                <a href="#" class="fa-solid fa-trash"></a>
-                                              </div>
-                                            </td>
+                                              <td colspan="5">
+                                                  <div class="class-name">
+                                                      <img src="img/class-avatar.jpg" alt="">
+                                                      <span>Classe 75</span>
+                                                  </div>
+                                              </td>
+                                              <td class="d-none d-sm-table-cell">15 Feb 2021</td>
+                                              <td class="d-none d-sm-table-cell">20%</td>
+                                              <td><span class="badge text-bg-success">Done</span></td>
+                                              <td>
+                                                  <div class="table-icons">
+                                                      <a href="#" class="fa-solid fa-pencil"></a>
+                                                      <a href="#" class="fa-solid fa-trash"></a>
+                                                  </div>
+                                              </td>
                                           </tr>
                                           <!-- Table row -->
                                           <tr class="small-text">
-                                            <td colspan="5">
-                                              <div class="class-name">
-                                                <img src="img/class-avatar.jpg" alt="">
-                                                <span>Classe 76</span>
-                                              </div>
-                                            </td>
-                                            <td class="hidden-table">16 Feb 2021</td>
-                                            <td>20%</td>
-                                            <td><span class="badge text-bg-success">Done</span></td>
-                                            <td>
-                                              <div class="table-icons">
-                                                <a href="#" class="fa-solid fa-pencil"></a>
-                                                <a href="#" class="fa-solid fa-trash"></a>
-                                              </div>
-                                            </td>
+                                              <td colspan="5">
+                                                  <div class="class-name">
+                                                      <img src="img/class-avatar.jpg" alt="">
+                                                      <span>Classe 76</span>
+                                                  </div>
+                                              </td>
+                                              <td class="d-none d-sm-table-cell">16 Feb 2021</td>
+                                              <td class="d-none d-sm-table-cell">20%</td>
+                                              <td><span class="badge text-bg-success">Done</span></td>
+                                              <td>
+                                                  <div class="table-icons">
+                                                      <a href="#" class="fa-solid fa-pencil"></a>
+                                                      <a href="#" class="fa-solid fa-trash"></a>
+                                                  </div>
+                                              </td>
                                           </tr>
                                           <!-- Table row -->
                                           <tr class="small-text">
-                                            <td colspan="5">
-                                              <div class="class-name">
-                                                <img src="img/class-avatar.jpg" alt="">
-                                                <span>Classe 77</span>
-                                              </div>
-                                            </td>
-                                            <td class="hidden-table">17 Feb 2021</td>
-                                            <td>20%</td>
-                                            <td><span class="text-white badge text-bg-warning">Process</span></td>
-                                            <td>
-                                              <div class="table-icons">
-                                                <a href="#" class="fa-solid fa-pencil"></a>
-                                                <a href="#" class="fa-solid fa-trash"></a>
-                                              </div>
-                                            </td>
+                                              <td colspan="5">
+                                                  <div class="class-name">
+                                                      <img src="img/class-avatar.jpg" alt="">
+                                                      <span>Classe 77</span>
+                                                  </div>
+                                              </td>
+                                              <td class="d-none d-sm-table-cell">17 Feb 2021</td>
+                                              <td class="d-none d-sm-table-cell">20%</td>
+                                              <td><span class="text-white badge text-bg-warning">Process</span></td>
+                                              <td>
+                                                  <div class="table-icons">
+                                                      <a href="#" class="fa-solid fa-pencil"></a>
+                                                      <a href="#" class="fa-solid fa-trash"></a>
+                                                  </div>
+                                              </td>
                                           </tr>
                                           <!-- Table row -->
                                           <tr class="small-text">
-                                            <td colspan="5">
-                                              <div class="class-name">
-                                                <img src="img/class-avatar.jpg" alt="">
-                                                <span>Classe 78</span>
-                                              </div>
-                                            </td>
-                                            <td class="hidden-table">18 Feb 2021</td>
-                                            <td>20%</td>
-                                            <td><span class="badge text-bg-success">Done</span></td>
-                                            <td>
-                                              <div class="table-icons">
-                                                <a href="#" class="fa-solid fa-pencil"></a>
-                                                <a href="#" class="fa-solid fa-trash"></a>
-                                              </div>
-                                            </td>
+                                              <td colspan="5">
+                                                  <div class="class-name">
+                                                      <img src="img/class-avatar.jpg" alt="">
+                                                      <span>Classe 78</span>
+                                                  </div>
+                                              </td>
+                                              <td class="d-none d-sm-table-cell">18 Feb 2021</td>
+                                              <td class="d-none d-sm-table-cell">20%</td>
+                                              <td><span class="badge text-bg-success">Done</span></td>
+                                              <td>
+                                                  <div class="table-icons">
+                                                      <a href="#" class="fa-solid fa-pencil"></a>
+                                                      <a href="#" class="fa-solid fa-trash"></a>
+                                                  </div>
+                                              </td>
                                           </tr>
                                           <!-- Table row -->
                                           <tr class="small-text">
-                                            <td colspan="5">
-                                              <div class="class-name">
-                                                <img src="img/class-avatar.jpg" alt="">
-                                                <span>Classe 79</span>
-                                              </div>
-                                            </td>
-                                            <td class="hidden-table">19 Feb 2021</td>
-                                            <td>20%</td>
-                                            <td><span class="badge text-bg-danger">Failed</span></td>
-                                            <td>
-                                              <div class="table-icons">
-                                                <a href="#" class="fa-solid fa-pencil"></a>
-                                                <a href="#" class="fa-solid fa-trash"></a>
-                                              </div>
-                                            </td>
+                                              <td colspan="5">
+                                                  <div class="class-name">
+                                                      <img src="img/class-avatar.jpg" alt="">
+                                                      <span>Classe 79</span>
+                                                  </div>
+                                              </td>
+                                              <td class="d-none d-sm-table-cell">19 Feb 2021</td>
+                                              <td class="d-none d-sm-table-cell">20%</td>
+                                              <td><span class="badge text-bg-danger">Failed</span></td>
+                                              <td>
+                                                  <div class="table-icons">
+                                                      <a href="#" class="fa-solid fa-pencil"></a>
+                                                      <a href="#" class="fa-solid fa-trash"></a>
+                                                  </div>
+                                              </td>
                                           </tr>
                                           <!-- Table row -->
                                           <tr class="small-text">
-                                            <td colspan="5">
-                                              <div class="class-name">
-                                                <img src="img/class-avatar.jpg" alt="">
-                                                <span>Classe 80</span>
-                                              </div>
-                                            </td>
-                                            <td class="hidden-table">20 Feb 2021</td>
-                                            <td>20%</td>
-                                            <td><span class="badge text-bg-success">Done</span></td>
-                                            <td>
-                                              <div class="table-icons">
-                                                <a href="#" class="fa-solid fa-pencil"></a>
-                                                <a href="#" class="fa-solid fa-trash"></a>
-                                              </div>
-                                            </td>
+                                              <td colspan="5">
+                                                  <div class="class-name">
+                                                      <img src="img/class-avatar.jpg" alt="">
+                                                      <span>Classe 80</span>
+                                                  </div>
+                                              </td>
+                                              <td class="d-none d-sm-table-cell">20 Feb 2021</td>
+                                              <td class="d-none d-sm-table-cell">20%</td>
+                                              <td><span class="badge text-bg-success">Done</span></td>
+                                              <td>
+                                                  <div class="table-icons">
+                                                      <a href="#" class="fa-solid fa-pencil"></a>
+                                                      <a href="#" class="fa-solid fa-trash"></a>
+                                                  </div>
+                                              </td>
                                           </tr>
                                           <!-- Table row -->
                                           <tr class="small-text">
-                                            <td colspan="5">
-                                              <div class="class-name">
-                                                <img src="img/class-avatar.jpg" alt="">
-                                                <span>Classe 81</span>
-                                              </div>
-                                            </td>
-                                            <td class="hidden-table">21 Feb 2021</td>
-                                            <td>20%</td>
-                                            <td><span class="badge text-bg-danger">Failed</span></td>
-                                            <td>
-                                              <div class="table-icons">
-                                                <a href="#" class="fa-solid fa-pencil"></a>
-                                                <a href="#" class="fa-solid fa-trash"></a>
-                                              </div>
-                                            </td>
+                                              <td colspan="5">
+                                                  <div class="class-name">
+                                                      <img src="img/class-avatar.jpg" alt="">
+                                                      <span>Classe 81</span>
+                                                  </div>
+                                              </td>
+                                              <td class="d-none d-sm-table-cell">21 Feb 2021</td>
+                                              <td class="d-none d-sm-table-cell">20%</td>
+                                              <td><span class="badge text-bg-danger">Failed</span></td>
+                                              <td>
+                                                  <div class="table-icons">
+                                                      <a href="#" class="fa-solid fa-pencil"></a>
+                                                      <a href="#" class="fa-solid fa-trash"></a>
+                                                  </div>
+                                              </td>
                                           </tr>
                                           <!-- Table row -->
                                           <tr class="small-text">
-                                            <td colspan="5">
-                                              <div class="class-name">
-                                                <img src="img/class-avatar.jpg" alt="">
-                                                <span>Classe 82</span>
-                                              </div>
-                                            </td>
-                                            <td class="hidden-table">22 Feb 2021</td>
-                                            <td>20%</td>
-                                            <td><span class="badge text-bg-success">Done</span></td>
-                                            <td>
-                                              <div class="table-icons">
-                                                <a href="#" class="fa-solid fa-pencil"></a>
-                                                <a href="#" class="fa-solid fa-trash"></a>
-                                              </div>
-                                            </td>
+                                              <td colspan="5">
+                                                  <div class="class-name">
+                                                      <img src="img/class-avatar.jpg" alt="">
+                                                      <span>Classe 82</span>
+                                                  </div>
+                                              </td>
+                                              <td class="d-none d-sm-table-cell">22 Feb 2021</td>
+                                              <td class="d-none d-sm-table-cell">20%</td>
+                                              <td><span class="badge text-bg-success">Done</span></td>
+                                              <td>
+                                                  <div class="table-icons">
+                                                      <a href="#" class="fa-solid fa-pencil"></a>
+                                                      <a href="#" class="fa-solid fa-trash"></a>
+                                                  </div>
+                                              </td>
                                           </tr>
-
-                                        </tbody>
+                                      </tbody>
                                     </table>
                                     <!-- Accordion -->
                                     <table class="table">

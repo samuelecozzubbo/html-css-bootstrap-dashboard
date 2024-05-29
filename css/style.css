@@ -35,6 +35,11 @@ header input{
     display: none;
 }
 
+.fa-bell.dropdown{
+    color: orange;
+    text-decoration: none;
+}
+
 /* Nav left */
 #nav-left{
     padding-top: 80px;
